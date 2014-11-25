@@ -5,7 +5,7 @@ name: "常叔烈焰坛"
 markdown: rdiscount
 
 author: "changzhen"
-atom-baseurl: "/"
+atom-baseurl: "unclechange.com"
 disqus: "UncleChange"
 
 navigations:
@@ -20,7 +20,7 @@ navigations:
     href: /about.html
   - title: Gallery
     class: fa fa-film
-    href: http://foto.lhzhang.com
+    href:  http://unclechange.github.io
   - title: Blogroll
     class: fa fa-link
     href: /links.html
