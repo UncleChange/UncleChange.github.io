@@ -15,8 +15,8 @@ mail
 
 > changzhen@chinasofti.com
 
-or follow 
+or follow sinaweibo
 
-> /
+> [@咆哮的印记](http://weibo.com/u/1785628473)
 
 to reach me
