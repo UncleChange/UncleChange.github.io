@@ -106,7 +106,7 @@ sublime就曾给我愉悦的编码体验。
 	
 		[{ "keys": ["ctrl+shift+b"], "command": "open_browser" }]
 
-*PS：如果要指定用什么浏览器预览，也可以将最后一行代码改成这样：*
+* PS：如果要指定用什么浏览器预览，也可以将最后一行代码改成这样：*
 	
 	webbrowser.get('safari').open_new(url)
 
