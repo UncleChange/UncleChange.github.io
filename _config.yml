@@ -6,7 +6,7 @@ markdown: rdiscount
 
 author: "changzhen"
 atom-baseurl: "http://unclechange.github.io"
-disqus: "UncleChange"
+disqus: "unclechange.github.io"
 
 navigations:
   - title: Archive
