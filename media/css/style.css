@@ -99,6 +99,26 @@ header {
   width: 680px;
   margin: 0 auto;
 }
+#playbutton{
+  position: absolute;
+  z-index: 100000000;
+  top: 0px;
+  left: 50px;
+  width: auto;
+  height: 50px;
+}
+#listplayer{
+  height: 210px;
+  width: 260px;
+  position: absolute;
+  z-index: 100000000;
+  top: 30px;
+  left: 0px;
+  overflow:hide;
+}
+#playerobj{
+  display: none;
+}
 #content {
   width: 680px;
   margin: 0 auto;

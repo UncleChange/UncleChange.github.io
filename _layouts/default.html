@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="/media/css/fontawesome.css">
     <script src="/media/js/jquery-1.7.1.min.js" type="text/javascript" charset="utf-8"></script> 
     <script type="text/javascript" src="/media/js/highlight.pack.js"></script>
+    <script type="text/javascript" src="/media/js/jia.js"></script>
     <script type="text/javascript">
       hljs.initHighlightingOnLoad();
     </script>
@@ -31,11 +32,16 @@
             {% endfor %}
           </nav>
         </header>
-        <div id="MP3player" class="MP3player">
-          <object type="application/x-shockwave-flash" data="media/dewplayer-multi.swf?mp3=http://rm.sina.com.cn/wm/VZ200909141900046609VK/music/MUSIC0909151133095477.mp3" width="240" height="20" id="dewplayer-multi">
-            <param name="wmode" value="transparent" />
-            <param name="movie" value="media/dewplayer-multi.swf?mp3=http://rm.sina.com.cn/wm/VZ200909141900046609VK/music/MUSIC0909151133095477.mp3" /></object>
+        <div id="playbutton">
+          <img src="/media/image/paly.jpg" style="cursor:pointer;" onmouseover="playerOver();" onclick="playerClick();">
         </div>
+         <div id ="listplayer" class="listplayer">
+           <object id="playerobj" type="application/x-shockwave-flash" data="/media/dewplayer-playlist.swf" width="240" height="200" id="dewplayer" name="dewplayer">
+              <param name="wmode" value="transparent" />
+              <param name="movie" value="/media/dewplayer-playlist.swf" />
+              <param name="flashvars" value="showtime=true&amp;autoreplay=true&amp;xml=/media/playlist.xml" />
+              </object>
+        </div> 
         <div id="content">
         {{ content }}
         </div>
