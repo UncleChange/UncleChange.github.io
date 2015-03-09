@@ -111,7 +111,6 @@ header {
   height: 210px;
   width: 260px;
   position: absolute;
-  z-index: 100000000;
   top: 30px;
   left: 0px;
   overflow:hide;
