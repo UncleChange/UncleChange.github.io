@@ -1,5 +1,4 @@
 markdown: rdiscount
-highlighter: true
 permalink: /:year/:month/:day/:title.html
 name: "常叔烈焰坛"
 markdown: rdiscount
