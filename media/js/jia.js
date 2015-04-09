@@ -14,12 +14,6 @@ $("#playbutton").mouseout(function(){
         $("#listplayer").css("z-index","-100000000");
     }
 });
-$("playbutton").on("tap",function(){
-    alert("点了点了点了");
-    $("#listplayer").css("overflow","auto");
-    $("#playerobj").css("display","inline");
-    $("#listplayer").css("z-index","100000000");
-});
 })
 
 function playerOver(){
