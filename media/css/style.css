@@ -95,9 +95,10 @@ header {
     header nav a, header nav #header h1 a, header #header h1 nav a, header nav article .title a, article .title header nav a, header nav article .meta .tags a, article .meta .tags header nav a, header nav article .divider a, article .divider header nav a {
       font-family: "telexregular", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
       color: #ccc; }
-#MP3player{
-  width: 680px;
-  margin: 0 auto;
+strong {
+  font-size: 14px;
+  font-family: "telexregular", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  color: #A9A9B0;
 }
 #playbutton{
   position: absolute;
@@ -111,12 +112,12 @@ header {
   height: 210px;
   width: 260px;
   position: absolute;
-  top: 30px;
+  top: 40px;
   left: 0px;
   overflow:hide;
 }
 #playerobj{
-  display: inline;
+  display: none;
 }
 #content {
   width: 680px;
