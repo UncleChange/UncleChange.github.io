@@ -116,7 +116,7 @@ header {
   overflow:hide;
 }
 #playerobj{
-  display: none;
+  display: inline;
 }
 #content {
   width: 680px;
