@@ -9,29 +9,17 @@
     <trackList>
 
         <track>
-          <location>http://rm.sina.com.cn/wm/VZ200909141900046609VK/music/MUSIC0909151133095477.mp3</location>
-          <creator>Bedrich Smetana</creator>
-          <album>Má Vlast</album>
-          <title>La Moldau (Smetana)</title>
+          <location>/media/mp3/刘明湘漂洋过海来看你.mp3</location>
+          <creator>刘明湘</creator>
+          <album>中国好声音</album>
+          <title>漂洋过海来看你(刘明湘)</title>
           <annotation>I love this song</annotation>
           <duration>32000</duration>
           <image>covers/smetana.jpg</image>
           <info></info>
           <link></link>
         </track>
-        
-        <track>
-          <location>http://mms.3bu.com/ring/ring/201005131139257.mp3</location>
-          <creator>Cesaria Evora</creator>
-          <album>Voz d'Amor (Cesaria Evora)</album>
-          <title>Saia Travada</title>
-          <annotation></annotation>
-          <duration></duration>
-          <image>covers/cesaria.jpg</image>
-          <info></info>
-          <link></link>
-        </track>
-        
+                
         <track>
           <location>http://rm.sina.com.cn/wm/VZ200812161100307607VK/music/MUSIC0812161100379667.mp3</location>
           <creator>Russian Red Army Choir</creator>
