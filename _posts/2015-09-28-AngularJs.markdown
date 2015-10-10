@@ -51,7 +51,7 @@ AngularJS通过为开发者呈现一个更高层次的抽象来简化应用的�
 * 将下面的源代码复制到您的HTML文件。
 * 在web浏览器中打开这个HTML文件。
 
-#####源代码
+###源代码
 ``` 
   <!doctype html>
   <html ng-app>
@@ -131,7 +131,8 @@ AngularJS通过作用域来保持数据模型与视图界面UI的双向同步。
 * 您还可以扩展和添加自己特定的应用服务。
 * 这些服务可以让您非常方便的编写WEB应用。
 #引导程序
-##*引导程序详情请见[http://www.ituring.com.cn/article/13473](http://www.ituring.com.cn/article/13473)*
+
+#### *引导程序详情请见  [http://www.ituring.com.cn/article/13473](http://www.ituring.com.cn/article/13473)*
 
 我们现在开始准备编写AngularJS应用——phonecat。这一步骤（步骤0），您将会熟悉重要的源代码文件，学习启动包含AngularJS种子项目的开发环境，并在浏览器端运行应用。
 
@@ -193,7 +194,7 @@ AngularJS表达式Angular expression是一种类似于JavaScript的代码片段�
 
 通过ngApp指令来自动引导AngularJS应用是一种简洁的方式，适合大多数情况。在高级开发中，例如使用脚本装载应用，您也可以使用bootstrap手动引导AngularJS应用。
 
-#####AngularJS应用引导过程有3个重要点：
+####AngularJS应用引导过程有3个重要点：
 
 * 注入器(injector)将用于创建此应用程序的依赖注入(dependency injection)；
 * 注入器将会创建根作用域作为我们应用模型的范围；
