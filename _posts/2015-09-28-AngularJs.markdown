@@ -22,7 +22,7 @@ AngularJS使用了不同的方法，它尝试去补足HTML本身在构建应用�
 * 能将逻辑代码关联到相关的DOM元素上；
 * 能将HTML分组成可重用的组件。
 
-###端对端的解决方案
+##端对端的解决方案
 
 
 AngularJS试图成为WEB应用中的一种端对端的解决方案。这意味着它不只是你的WEB应用中的一个小部分，而是一个完整的端对端的解决方案。这会让AngularJS在构建一个CRUD（增加Create、查询Retrieve、更新Update、删除Delete）的应用时显得很“固执”（原文为 opinionated,意指没有太多的其他方式）。但是，尽管它很“固执”，它仍然能确保它的“固执”只是在你构建应用的起点，并且你仍能灵活变动。AngularJS的一些出众之处如下：
@@ -87,7 +87,7 @@ AngularJS通过为开发者呈现一个更高层次的抽象来简化应用的�
 * 将下面的源代码复制到您的HTML文件。
 * 刷新浏览器窗口。
 
-#####源代码
+###源代码
 ```
   <!doctype html>
   <html ng-app>
@@ -130,8 +130,8 @@ AngularJS通过作用域来保持数据模型与视图界面UI的双向同步。
 * 底层服务包括依赖注入，XHR、缓存、URL路由和浏览器抽象服务。
 * 您还可以扩展和添加自己特定的应用服务。
 * 这些服务可以让您非常方便的编写WEB应用。
-
 #引导程序
+##*引导程序详情请见[http://www.ituring.com.cn/article/13473](http://www.ituring.com.cn/article/13473)*
 
 我们现在开始准备编写AngularJS应用——phonecat。这一步骤（步骤0），您将会熟悉重要的源代码文件，学习启动包含AngularJS种子项目的开发环境，并在浏览器端运行应用。
 
@@ -444,44 +444,7 @@ img_tutorial_03
 
 ngRepeat会根据filter过滤器生成的手机记录数据数组来自动更新视图。整个过程对于开发者来说都是透明的。
 
-#测试
 
-在步骤2，我们学习了编写和运行一个测试的方法。单元测试用来测试我们用js编写的控制器和其他组件都非常方便，但是不能方便的对DOM操作和应用集成进行测试。对于这些来说，端到端测试是一个更好的选择。
-
-搜索特性是完全通过模板和数据绑定实现的，所以我们的第一个端到端测试就来验证这些特性是否符合我们的预期。
-
-test/e2e/scenarios.js：
-
-    describe('PhoneCat App', function() {
-
-      describe('Phone list view', function() {
-
-        beforeEach(function() {
-          browser().navigateTo('../../app/index.html');
-        });
-
-
-        it('should filter the phone list as user types into the search box', function() {
-          expect(repeater('.phones li').count()).toBe(3);
-
-          input('query').enter('nexus');
-          expect(repeater('.phones li').count()).toBe(1);
-
-          input('query').enter('motorola');
-          expect(repeater('.phones li').count()).toBe(2);
-        });
-      });
-    });
-
-尽管这段测试代码的语法看起来和我们之前用Jasmine写的单元测试非常像，但是端到端测试使用的是AngularJS端到端测试器提供的接口。
-
-运行一个端到端测试，在浏览器新标签页中打开下面任意一个：
-
-  * node.js用户：http://localhost:8000/test/e2e/runner.html
-  * 使用其他http服务器的用户：http://localhost:[port-number]/[context-path]/test/e2e/runner.html
-  * 访客：http://angular.github.com/angular-phonecat/step-3/test/e2e/runner.html
-
-这个测试验证了搜素框和迭代器被正确地集成起来。你可以发现，在AngularJS里写一个端到端测试多么的简单。尽管这个例子仅仅是一个简单的测试，但是用它来构建任何一个复杂、可读的端到端测试都很容易。
 #练习
 
 在index.html模板中添加一个\{\{query\}\}绑定来实时显示query模型的当前值，然后观察他们是如何根据输入框中的值而变化。
@@ -535,7 +498,6 @@ git checkout -f step-4
 
 步骤3和步骤4之间最重要的不同在下面列出。你可以在GitHub里看到完整的差别。
 ##模板
-
 app/index.html
 
       Sort by:
@@ -587,3 +549,11 @@ app/js/controllers.js：
 
 ##现在我们该好好谈谈双向数据绑定了。
 注意到当应用在浏览器中加载时，“Newest”在下拉菜单中被选中。这是因为我们在控制器中把orderProp设置成了‘age’。所以绑定在从我们模型到用户界面的方向上起作用——即数据从模型到视图的绑定。现在当你在下拉菜单中选择“Alphabetically”，数据模型会被同时更新，并且手机列表数组会被重新排序。这个时候数据绑定从另一个方向产生了作用——即数据从视图到模型的绑定。
+##练习
+
+在PhoneListCtrl控制器中，把设置orderProp那条语句删掉，你会看到AngularJS会在下拉菜单中临时添加一个空白的选项，并且排序顺序是默认排序（即未排序）。
+在index.html模板里面添加一个`{{orderProp}}绑定来实时显示它的值。
+
+##总结
+
+现在你已经为你的应用提供了搜索功能，并且完整的进行了测试。步骤5我们将学习AngularJS的服务以及AngularJS如何使用依赖注入。
