@@ -251,7 +251,7 @@ img_tutorial_00
 ```
 ##练习
 
-* 尝试添加多个静态HTML代码到index.html， 例如：
+尝试添加多个静态HTML代码到index.html， 例如：
  
   ```
     <p>Total number of phones: 2</p>
