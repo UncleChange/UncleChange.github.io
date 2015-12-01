@@ -14,7 +14,7 @@ $("#playbutton").mouseout(function(){
         $("#listplayer").css("z-index","-100000000");
     }
 });
-})
+});
 
 function playerOver(){
     $("#listplayer").css("overflow","auto");
