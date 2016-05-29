@@ -1,7 +1,6 @@
-markdown: rdiscount
 permalink: /:year/:month/:day/:title.html
 name: "常叔烈焰坛"
-markdown: rdiscount
+markdown: kramdown
 
 author: "changzhen"
 atom-baseurl: "http://unclechange.github.io"
