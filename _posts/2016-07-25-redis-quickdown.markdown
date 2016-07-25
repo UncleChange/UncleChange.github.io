@@ -120,7 +120,7 @@ tags:
 
 1、安全性
 
-    设置客户端连接后进行任何操作指定前需要密码，一个外部用户可以再一秒钟进行150W次访问，具体操作密码修改设置redis.conf里面的requirepass属性给予密码，当然我这里给的是primos 
+设置客户端连接后进行任何操作指定前需要密码，一个外部用户可以再一秒钟进行150W次访问，具体操作密码修改设置redis.conf里面的requirepass属性给予密码，当然我这里给的是primos 
 之后如果想操作可以采用登陆的时候就授权使用:
 sudo /opt/java/redis/bin/redis-cli -a primos
 或者是进入以后auth primos然后就可以随意操作了
@@ -130,8 +130,10 @@ sudo /opt/java/redis/bin/redis-cli -a primos
 做这个操作的时候我准备了两个虚拟机，ip分别是192.168.15.128和192.168.15.133
     通过主从复制可以允许多个slave server拥有和master server相同的数据库副本
 具体配置是在slave上面配置slave
-slaveof 192.168.15.128 6379
-masterauth primos
+
+    slaveof 192.168.15.128 6379
+    masterauth primos
+
 如果没有主从同步那么就检查一下是不是防火墙的问题，我用的是ufw，设置一下sudo ufw allow 6379就可以了
 这个时候可以通过info查看具体的情况
  
