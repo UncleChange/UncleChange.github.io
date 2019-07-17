@@ -174,7 +174,7 @@ def coefficient_dispersion(num_list):
 
 ### 数据分布形态
 
-​	这里的数据分布主要指的是概率分布，概率分布是指事件的不同结果对应的发生概率所构成的分布，形态一般可以使用图形表示。这里主要说明其中的两个指标。
+​	这里的数据分布主要指的是概率分布，概率分布是指事件的不同结果对应的发生概率所构成的分布，形态一般可以使用图形表示。这里先引出其中的两个指标，下一章节将会详细的说概率分布。
 
 #### 	正态分布
 
@@ -195,3 +195,5 @@ def coefficient_dispersion(num_list):
 def skew_coefficient(num_list):
     return (avg(num_list)-median(num_list))/standard_deviation(num_list)
 ```
+
+*备注：以上函数在numpy与pandas皆有实现* 
