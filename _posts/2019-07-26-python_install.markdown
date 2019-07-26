@@ -9,7 +9,7 @@ tags:
   - mysql
 ---
 
-# Python包安装小贴士
+
 
 关于Python，由于他的灵活易用性与丰富的工具包得以广泛使用，现在大热。但是正是由于他的包很多是第三方开发，依赖c或者c++库，所以有些包对于window不友好，而有些包依赖需要特别注意。今天我就针对Hive和Mysql的python客户端安装进行一些简单梳理包括其连接原理，算是小贴士吧。
 
@@ -39,9 +39,7 @@ sudo yum install cyrus-sasl-plain  cyrus-sasl-devel  cyrus-sasl-gssapi;
 
 ## Mysql
 
-[Python 操作 MySQL 数据库]: https://www.runoob.com/python/python-mysql.html	"Python 操作 MySQL 数据库"
-
-Python-MySQL的连接方式在菜鸟教程有很好的说明。
+Python-MySQL的连接方式在菜鸟教程有很好的说明，见：[Python 操作 MySQL 数据库]( https://www.runoob.com/python/python-mysql.html)。
 
 linux中需要注意的是需要安装mysql-devel才能使用MySQLdb库：
 
@@ -49,9 +47,10 @@ linux中需要注意的是需要安装mysql-devel才能使用MySQLdb库：
 sudo yum install python-devel mysql-devel
 ```
 
-但是由于Python-MySQL年久失修，在windows下安装一切好像都没有那么美好。但是好在我们有很多第三方库**LFD**
+但是由于Python-MySQL年久失修，在windows下安装一切好像都没有那么美好。但是好在我们有很多第三方库
+**LFD** 请见：[Python扩展包的非官方Windows二进制文件LFD](https://www.lfd.uci.edu/~gohlke/pythonlibs/#gevent)
 
-[Python扩展包的非官方Windows二进制文件LFD]: https://www.lfd.uci.edu/~gohlke/pythonlibs/#gevent	"LFD"
+
 
 之前用pip install安装python库时，时不时会出现需要一些依赖库的无奈错误，解决方法就是使用这个封装好的库
 我切到它的主页，看到它的解释是“A NIH research center for biomedical fluorescence spectroscopy at the University of California, Irvine”，是美国国立卫生研究院设在加利福尼亚州大学生物医学荧光光谱学的研究中心的网址，好大学就是好大学……
